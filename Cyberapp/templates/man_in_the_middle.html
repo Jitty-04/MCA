@@ -1,0 +1,105 @@
+
+{% extends 'head2_tail2.html' %}
+
+{% block ddos %}
+
+<html>
+<body><center>
+
+<div style="width:97%;margin:(0px,0px);padding:0px; height:1000px;background-image: url(\\static\\bg3.gif);background-repeat:no-repeat;background-position:center;background-size:cover;">
+
+<br><br>
+<center>
+
+<div style="width:90%;height:920px;background-color: white;float:center;background-position:center;background-repeat:no-repeat;">
+
+<center>
+
+<H2 style="color:black;"><br>MAN IN THE MIDDLE</style></H2>
+    
+    <center>
+
+  <div style="width:80%;height:800px;background-color: white;float:center;background-position:center;background-repeat:no-repeat;">
+
+          <p style="color:black;"><B>
+
+      </B></p>
+          
+      <h1 style="color:black"><B></B></h1>
+
+
+ <p style="color:black;"><B>A man in the middle (MITM) attack is a general term for when a perpetrator positions himself in a conversation between a user and an application—either to eavesdrop or to impersonate one of the parties, making it appear as if a normal exchange of information is underway.
+
+  The goal of an attack is to steal personal information, such as login credentials, account details and credit card numbers. Targets are typically the users of financial applications, SaaS businesses, e-commerce sites and other websites where logging in is required.
+  
+  Information obtained during an attack could be used for many purposes, including identity theft, unapproved fund transfers or an illicit password change.
+  
+  Additionally, it can be used to gain a foothold inside a secured perimeter during the infiltration stage of an advanced persistent threat (APT) assault.
+  
+  Broadly speaking, a MITM attack is the equivalent of a mailman opening your bank statement, writing down your account details and then resealing the envelope and delivering it to your door.
+  
+  
+
+      </B></p>
+
+<h1 style="color:black"><B>MITM attack progression</B></h1>
+
+
+ <p style="color:black;"><B>
+  Successful MITM execution has two distinct phases: interception and decryption.
+
+  
+  Interception:
+
+
+  The first step intercepts user traffic through the attacker’s network before it reaches its intended destination.
+  
+  The most common (and simplest) way of doing this is a passive attack in which an attacker makes free, malicious WiFi hotspots available to the public. Typically named in a way that corresponds to their location, they aren’t password protected. Once a victim connects to such a hotspot, the attacker gains full visibility to any online data exchange.
+  
+  Attackers wishing to take a more active approach to interception may launch one of the following attacks:
+  
+  IP spoofing involves an attacker disguising himself as an application by altering packet headers in an IP address. As a result, users attempting to access a URL connected to the application are sent to the attacker’s website.
+  ARP spoofing is the process of linking an attacker’s MAC address with the IP address of a legitimate user on a local area network using fake ARP messages. As a result, data sent by the user to the host IP address is instead transmitted to the attacker.
+  DNS spoofing, also known as DNS cache poisoning, involves infiltrating a DNS server and altering a website’s address record. As a result, users attempting to access the site are sent by the altered DNS record to the attacker’s site.
+  
+  Decryption:
+
+  After interception, any two-way SSL traffic needs to be decrypted without alerting the user or application. A number of methods exist to achieve this:
+  
+  HTTPS spoofing sends a phony certificate to the victim’s browser once the initial connection request to a secure site is made. It holds a digital thumbprint associated with the compromised application, which the browser verifies according to an existing list of trusted sites. The attacker is then able to access any data entered by the victim before it’s passed to the application.
+  SSL BEAST (browser exploit against SSL/TLS) targets a TLS version 1.0 vulnerability in SSL. Here, the victim’s computer is infected with malicious JavaScript that intercepts encrypted cookies sent by a web application. Then the app’s cipher block chaining (CBC) is compromised so as to decrypt its cookies and authentication tokens.
+  SSL hijacking occurs when an attacker passes forged authentication keys to both the user and application during a TCP handshake. This sets up what appears to be a secure connection when, in fact, the man in the middle controls the entire session.
+  SSL stripping downgrades a HTTPS connection to HTTP by intercepting the TLS authentication sent from the application to the user. The attacker sends an unencrypted version of the application’s site to the user while maintaining the secured session with the application. Meanwhile, the user’s entire session is visible to the attacker.
+      </B></p>
+                <!--<h3 style="color:grey">TECHNOLOGIES WE ARE DEALING WITH..</h3>
+          <div class="list-style">
+            <div style="color:black;" class="col-lg-12 col-sm-12 col-xs-12">
+              <ul><b>
+                <li>Implimentation of Artificial Intelligence concepts</li><br>
+                <li>Machine learning for learning of new attacks</li><br>
+                <li>Deep Data Mining for Mining of contents from file</li><br>
+                <li>All Important Cyber Security Concepts</li><br>
+                </b>
+              </ul>
+            </div>
+            
+          </div>
+        
+       </div>
+
+                -->
+
+
+
+
+</center>
+
+</div>
+
+</center>
+</div>
+
+</center></body>
+</html>
+
+{% endblock %}

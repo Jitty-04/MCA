@@ -1,0 +1,90 @@
+        
+{% extends 'head2_tail2.html' %}
+
+{% block user_edit_profile %}
+
+
+<html>
+<body><center>
+
+<div class="se-pre-con"></div>
+
+<div style="width:97%;margin:(0px,0px);padding:0px; height:650px;background-image: url(\\static\\bg1.jpg);background-repeat:no-repeat;background-position:center;background-size:cover;">
+
+<br><br>
+<center>
+
+<div style="width:90%;height:550px;background-color: white;float:center;background-position:center;background-repeat:no-repeat;">
+
+<center>
+
+<H2 style="color:black;"><br>FEEDBACKS  
+<font color="white">..</font><img src="/static/new/editme.jpg" width="70px" height="70px">
+</style></H2>
+    
+    <center>
+
+  <div style="width:50%;height:400px;background-color: white;float:center;background-position:center;background-repeat:no-repeat;">
+<br><br>
+
+   <!-- <font color="white"></font><img src="/static/new/profileuu.png" width="70px" height="70px"> -->
+    
+    <form method=GET style="width:100%;padding:30px;">
+     <table cellspacing="15px" style="color:black;" class="table">
+<tr>
+    <th>
+        Name
+    </th>
+    <th>
+        Email
+    </th> 
+    <th>
+        Experience
+    </th> 
+    <th>
+        Rating
+    </th> 
+    <th>
+        Comment
+    </th>  
+</tr>
+    {% for d in data %} 
+
+    <tr>
+    
+     <td>{{d.1}}</td>
+     <td>{{d.2}}</td>
+     <td>{{d.3}}</td>
+     <td>{{d.4}}</td>
+     <td>{{d.5}}</td>
+
+    </tr>
+    {% endfor %}
+     
+     </table>
+    </center>
+    </form>
+     
+</div>
+
+ <!--<div style="width:50%;height:400px;background-color: white;float:left;background-position:center;background-repeat:no-repeat;">
+<br><br><br>
+
+     {% block edit %}
+
+     {% endblock %}
+
+</div>-->
+
+</center>
+
+   
+</div>
+
+</center>
+</div>
+
+</center></body>
+</html>
+
+{% endblock %}
